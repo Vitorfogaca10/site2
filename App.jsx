@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Home from './index.jsx'
-import Login from '.login.jsx'
+import Login from './login.jsx'
 
 
 
