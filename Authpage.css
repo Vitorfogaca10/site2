@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.main-login {
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh; 
+
+} 
+
+header {
+   padding: 20px 60px;
+  background: #000;   
+}
+
+
+
+/* Container do formulário */
+.tudo {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 420px;
+    padding-bottom: 2.5rem;
+    padding-top: .75rem;
+ 
+}
+
+/* Títulos */
+
+.title {
+    margin-top: 50px;
+}
+.title h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #263238;
+}
+
+.title p {
+  font-size: 14px;
+  color: #263238;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.form-container div {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+  
+}
+
+
+.form-container input {
+  width: 100%;
+  padding: 15px 0 12px 12px; /* espaço pro ícone */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-left: 40px; 
+  color: rgb(127 138 148 /  1);
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-container i {
+  position: absolute;
+  right: 390px;
+  top: 50%;
+  transform: translateY(-38%);
+  color: #777;
+  font-size: 18px;
+
+}
+
+/* Link esqueci senha */
+section a {
+  font-size: 13px;
+  color: #0d3b66;
+  text-decoration: none;
+  margin: 10px 0;
+ display: block;
+  text-align: center;
+  width: 100%;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* Botão entrar */
+section > button {
+  width: 100%;
+  background: #ff6600;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+section > button:hover {
+  background: #e65c00;
+}
+
+/* Crie sua conta grátis */
+section > a:last-of-type {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  font-weight: 600;
+  color: #0d3b66;
+}
+
+/* Linha divisória com 'ou' */
+section .line:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+}
+
+section div:nth-of-type(1) hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+section div:nth-of-type(1) span {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Botões sociais */
+section div button {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+section div button:hover {
+  background: #f9f9f9;
+}
