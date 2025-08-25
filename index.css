@@ -460,7 +460,7 @@ text-align: center;
   font-size: 26px;
   background: none;
   border: none;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -481,10 +481,13 @@ text-align: center;
     padding: 20px;
     gap: 20px;
     z-index: 1000;
+      align-items: flex-start;    /* alinha na esquerda */
+  justify-content: flex-start;
   }
 
   .link-btt.open {
     display: flex; /* mostra o menu quando aberto */
+
   }
 
   .links {
@@ -493,6 +496,7 @@ text-align: center;
     margin: 0;
     background: none;
     padding: 0;
+
   }
 
   .nav-login, .nav-cadastro {
@@ -503,4 +507,13 @@ text-align: center;
     width: 100%;
     justify-content: center;
   }
+  .links a {
+    color: white;
+  }
+  
+
+
+
+
+
 }
