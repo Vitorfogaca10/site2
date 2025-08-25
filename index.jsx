@@ -22,10 +22,10 @@ function Home() {
                 {/* Nav com toggle */}
                 <nav className={`link-btt ${menuOpen ? "open" : ""}`}>
                     <ul className="links">
-                        <a href="#">Home</a>
-                        <a href="#comofunciona">Como Funciona</a>
-                        <a href="#sobre">Sobre</a>
-                        <a href="#sobre">Contato</a>
+                        <a href="#" onClick={() => setMenuOpen(false)}>Home</a>
+                        <a href="#comofunciona" onClick={() => setMenuOpen(false)}>Como Funciona</a>
+                        <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre</a>
+                        <a href="#sobre" onClick={() => setMenuOpen(false)}>Contato</a>
                     </ul>
                     <ul className="nav-login">
                         <li><NavLink className="btn-login" to="/login">Login</NavLink></li>
