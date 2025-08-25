@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import './index.css'
 import { PiNotePencilDuotone } from "react-icons/pi";
@@ -9,12 +10,17 @@ import { AiOutlineTikTok } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 
 function Home() {
+    const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <div className="navbar">
-            <header className="container">
+                       <header className="container">
                 <div className="logo">BRAPY</div>
-                <nav className="link-btt">
+
+                {/* Botão hamburguer visível só no mobile */}
+                <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
+                {/* Nav com toggle */}
+                <nav className={`link-btt ${menuOpen ? "open" : ""}`}>
                     <ul className="links">
                         <a href="#">Home</a>
                         <a href="#comofunciona">Como Funciona</a>
@@ -22,13 +28,14 @@ function Home() {
                         <a href="#sobre">Contato</a>
                     </ul>
                     <ul className="nav-login">
-                        <li><NavLink className="btn-login"to="/login">Login</NavLink></li>
+                        <li><NavLink className="btn-login" to="/login">Login</NavLink></li>
                     </ul>
                     <ul className="nav-cadastro ">
                         <li><button to="/" className="btn-cadastro">Cadastre-se</button></li>
                     </ul>
                 </nav>
             </header>
+
             <main className="main">
                 <div className="conteudo">
                     <h1>Conectamos quem precisa importar <br />com quem já está vindo do Paraguai</h1>
@@ -44,7 +51,7 @@ function Home() {
                     <div className="card">
                         <div>
                             <i> <PiNotePencilDuotone /> </i>
-                            <p>1. Faça seu pedido, descrevendo loja, cidade de compra e endereço de entraga.</p>
+                            <p>1. Faça seu pedido, descrevendo loja, cidade de compra e endereço de entrega.</p>
                         </div>
                         <div>
                             <i> <FaRegHandshake /> </i>
@@ -116,7 +123,8 @@ function Home() {
             <footer class="footer">
                 <p>© 2025 BRAPY IMPORTAÇÕES. Todos os direitos reservados.</p>
             </footer>
-        </div>
+        </div >
     )
 }
 
+export default Home;
