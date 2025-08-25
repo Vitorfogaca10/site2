@@ -339,3 +339,118 @@ text-align: center;
   color: #e65c00;
 }
 
+
+/* ================= RESPONSIVIDADE ================= */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .links {
+    gap: 30px;
+    margin-right: 50px;
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .sou-cards {
+    grid-template-columns: 1fr; /* vira 1 coluna */
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .como-funciona .card, 
+  .seguranca .card {
+    grid-template-columns: 1fr 1fr; /* 2 colunas */
+    padding: 20px;
+  }
+
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .sobre-left, .sobre-right {
+    max-width: 100%;
+    transform: none;
+  }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .nav-login, .nav-cadastro {
+    margin-top: 10px;
+  }
+
+  .main {
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .sou-btn {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .como-funciona .card, 
+  .seguranca .card {
+    grid-template-columns: 1fr; /* vira 1 coluna no celular */
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .sou-cards {
+    grid-template-columns: 1fr; /* só uma coluna */
+    padding: 20px;
+  }
+
+  .sobre {
+    padding: 20px;
+  }
+
+  .sobre-left h2 {
+    font-size: 18px;
+  }
+
+  .sobre-left p {
+    font-size: 14px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .sou-importador, .sou-transportador {
+    width: 100%;
+  }
+
+  .card-importador, .card-transportador {
+    padding: 20px;
+  }
+
+  .sobre-left h2 {
+    font-size: 16px;
+  }
+}
