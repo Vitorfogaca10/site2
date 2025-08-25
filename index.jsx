@@ -14,7 +14,17 @@ function Home() {
         <div className="navbar">
             <header className="container">
                 <div className="logo">BRAPY</div>
-                <nav className="link-btt">
+
+                {/* Botão hamburguer visível só no mobile */}
+                <button 
+                  className="hamburger" 
+                  onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    ☰
+                </button>
+
+                {/* Nav com toggle */}
+                <nav className={`link-btt ${menuOpen ? "open" : ""}`}>
                     <ul className="links">
                         <a href="#">Home</a>
                         <a href="#comofunciona">Como Funciona</a>
@@ -22,7 +32,7 @@ function Home() {
                         <a href="#sobre">Contato</a>
                     </ul>
                     <ul className="nav-login">
-                        <li><NavLink className="btn-login"to="/login">Login</NavLink></li>
+                        <li><NavLink className="btn-login" to="/login">Login</NavLink></li>
                     </ul>
                     <ul className="nav-cadastro ">
                         <li><button to="/" className="btn-cadastro">Cadastre-se</button></li>
@@ -119,5 +129,6 @@ function Home() {
         </div>
     )
 }
+
 
 export default Home;
